@@ -1,0 +1,289 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 16430753500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is at OKR login page",
+            "match": {
+              "location": "HomePageStepDefinition.invokeApplication()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 479223800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Enter \"Deepanjali.Chaudhary@infoprolearning.com\" in Email field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Deepanjali.Chaudhary@infoprolearning.com",
+                  "offset": 12
+                }
+              ],
+              "location": "HomePageStepDefinition.user_Enter_in_Email_field(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 218350800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User Enter \"Delhi@2710\" in Password field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Delhi@2710",
+                  "offset": 12
+                }
+              ],
+              "location": "HomePageStepDefinition.user_Enter_in_Password_field(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7138549000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click on Sign In Button",
+            "match": {
+              "location": "HomePageStepDefinition.user_click_on_Sign_In_Button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5051967100,
+              "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat stepDefinition.HomePageStepDefinition.admin_login_should_be_sucessful(HomePageStepDefinition.java:120)\r\n\tat ✽.Then Admin login should be sucessful(Admin.feature:9)\r\n",
+              "status": "failed"
+            },
+            "line": 9,
+            "name": "Admin login should be sucessful",
+            "match": {
+              "location": "HomePageStepDefinition.admin_login_should_be_sucessful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 327800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CreateOKRDefinition.BeforeScenario(Scenario)"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "Check Create new organization functionality",
+        "description": "",
+        "id": "verify-sorting-functionality;check-create-new-organization-functionality;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "User is at admin page",
+            "match": {
+              "location": "AdminDefinition.user_is_at_admin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User click on CreateOrganization icon",
+            "match": {
+              "location": "AdminDefinition.user_click_on_CreateOrganization_icon()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User enter \"Testing Organization\" in Organization Name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Testing Organization",
+                  "offset": 12
+                }
+              ],
+              "location": "AdminDefinition.user_enter_in_Organization_Name_field(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User enter \"Anurag Chaudhuri\" in Leader Name field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Anurag Chaudhuri",
+                  "offset": 12
+                }
+              ],
+              "location": "AdminDefinition.user_enter_in_Leader_Name_field(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User upload \"D:\\Comp-Deepanjali\\Data\\Deepanjali\\IMG_9722.jpg\" in logo field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "D:\\Comp-Deepanjali\\Data\\Deepanjali\\IMG_9722.jpg",
+                  "offset": 13
+                }
+              ],
+              "location": "AdminDefinition.user_upload_in_logo_field(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": "User enter current date in Start date field",
+            "match": {
+              "location": "AdminDefinition.user_enter_current_date_in_Start_date_field()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": "User select \"Quarter\" in Organization Cycle field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Quarter",
+                  "offset": 13
+                }
+              ],
+              "location": "AdminDefinition.user_select_in_Organization_Cycle_field(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": "User select private OKR \"Yes\" option for the organization",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Yes",
+                  "offset": 25
+                }
+              ],
+              "location": "AdminDefinition.user_select_private_OKR_option_for_the_organization(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "User clicks on Save and Exit button",
+            "match": {
+              "location": "AdminDefinition.user_clicks_on_Save_and_Exit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "\"Testing Organization\" should be created successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Testing Organization",
+                  "offset": 1
+                }
+              ],
+              "location": "AdminDefinition.should_be_created_successfully(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Admin3"
+          },
+          {
+            "line": 11,
+            "name": "@admin2"
+          }
+        ]
+      }
+    ],
+    "name": "Verify sorting functionality",
+    "description": "This feature verify all admin operations",
+    "id": "verify-sorting-functionality",
+    "keyword": "Feature",
+    "uri": "Admin.feature"
+  }
+]
